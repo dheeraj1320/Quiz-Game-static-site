@@ -42,6 +42,10 @@ footer {
   margin: auto;
 }
 
+.window {
+  border-radius: 15px;
+}
+
 .QA-container {
   height: 40vh;
 }
@@ -137,6 +141,10 @@ input[type="checkbox"]:checked {
     font-size: 1rem;
   }
 
+  .welcome-text {
+    font-size: 1.5rem;
+  }
+
   .window,
   .main,
   .rules,
@@ -166,188 +174,3 @@ input[type="checkbox"]:checked {
     height: 9vh;
   }
 }
-
-/* body {
-  font-size: 1.5rem;
-  background-color: #00203fff;
-  margin: 0 5%;
-  height: 95vh;
-}
-
-nav {
-  border: 5px solid white;
-  text-align: center;
-  border-radius: 15px;
-  background-color: #adefd1ff;
-  margin-top: 0px;
-  font-size: 20px;
-  color: #00203fff;
-  height: 12vh;
-}
-
-
-
-
-button {
-  color: white;
-  background-color: #00203fff;
-  border-radius: 15px;
-  width: 7rem;
-  height: 3rem;
-  font-size: 1.1rem;
-  border: 2px solid white;
-}
-
-button:hover {
-  background-color: rgb(0, 52, 104);
-}
-
-footer {
-  display: inline-block;
-  width: 90%;
-  position: absolute;
-  bottom: 10px;
-  color: white;
-  font-size: 0.8rem;
-  text-align: center;
-}
-
-
-
-.finalMessage {
-  margin: 7rem 7rem;
-  text-align: center;
-  font-size: 2.5rem;
-  color: #00203fff;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-
-.container {
-  height: 80vh;
-}
-
-.welcome-text {
-  color: white;
-  width: 40%;
-  font-size: 1.7rem;
-  margin: auto;
-  text-align: center;
-  position: relative;
-  top: 5%;
-}
-
-.timer {
-  color: white;
-  position: absolute;
-  font-weight: bold;
-  left: 78%;
-  width: 160px;
-  height: 40px;
-  border-radius: 10px;
-}
-
-
-
-.window {
-  background-color: #adefd1ff;
-  border: 5px solid white;
-  position: relative;
-  z-index: 1;
-  top: 5%;
-  margin: 0 30%;
-  height: 85%;
-  border-radius: 15px;
-}
-
-
-
-.rules h2 {
-  text-align: center;
-  margin: auto;
-  margin-top: 20px;
-  background: #00203fff;
-  color: white;
-  width: 159px;
-  border: px solid white;
-  border-radius: 10px;
-}
-
-.rules ol {
-  width: 77%;
-  text-align: justify;
-  margin: auto;
-  margin-top: 7%;
-}
-
-.rules ol li {
-  margin-top: 17px;
-}
-
-.rules button {
-  display: block;
-  margin: auto;
-  margin-top: 6%;
-}
-
-.question {
-  margin-bottom: 2rem;
-}
-
-.progress-bar {
-  border-radius: 15px 0 0 0;
-  height: 5%;
-  margin-bottom: 2rem;
-  background-color: white;
-  width: 10%;
-}
-
-.options div {
-  margin-bottom: 1rem;
-}
-
-.options div label {
-  position: relative;
-  top: 2px;
-}
-
-.QA-container {
-  margin-left: 2rem;
-}
-
-.buttons {
-  display: flex;
-  width: 100%;
-  position: absolute;
-  bottom: 2rem;
-  justify-content: space-around;
-}
-
-.submit {
-  background-color: rgb(143, 1, 1);
-}
-
-.submit:hover {
-  background-color: rgb(174, 1, 1);
-}
-
-.try-again {
-  display: block;
-  margin: auto;
-}
-
-
-@media all and (max-width: 1300px) {
-  .window {
-    width: 458px;
-    display: block;
-    margin: auto;
-  }
-
-  nav {
-    width: 1160;
-  }
-} */
