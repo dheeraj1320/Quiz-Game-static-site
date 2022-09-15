@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="JS/questions.js"></script>
+    <script defer src="JS/script.js"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Quiz Game</title>
+  </head>
+
+  <body>
+    <nav class="d-flex bg-transparent justify-content-center w-100">
+      <p class="text-center yellow-txt">Quiz Game</p>
+    </nav>
+
+    <div
+      class="container w-100 d-flex flex-column justify-content-center align-items-center"
+    >
+      <div class="h-60 w-70">
+        <div class="welcome-text w-100 text-center mb-2">
+          Welcome to the quiz
+        </div>
+
+        <div class="window border rounded border-5 border-white w-100">
+          <!--  -->
+          <!-- rules container -->
+          <div class="rules">
+            <h2 class="yellow-txt w-50 m-auto text-center pb-4 fw-bold mt-4">
+              RULES
+            </h2>
+            <ol class="mx-4">
+              <li>
+                This quiz contains
+                <span class="yellow-txt fw-bold">5 questions.</span>
+              </li>
+
+              <li>
+                Maximum time allotted for the quiz is
+                <span class="yellow-txt fw-bold">2 minutes.</span>
+              </li>
+              <li>
+                Every question has
+                <span class="yellow-txt fw-bold">equal</span>
+                weightage.
+              </li>
+              <li>
+                Each question has
+                <span class="yellow-txt fw-bold">only one</span>
+                correct answer.
+              </li>
+              <li>
+                Score will be calculated once you press the
+                <span class="yellow-txt fw-bold">submit</span>
+                button.
+              </li>
+            </ol>
+            <button class="startBtn btn btn-warning d-block m-auto my-5">
+              Start
+            </button>
+          </div>
+
+          <div class="main hide-and-remove">
+            <!-- progress bar -->
+            <div class="progress mb-3">
+              <div class="progress-bar bg-primary rounded-0"></div>
+            </div>
+
+            <!-- Q and A container -->
+            <div
+              class="QA-container d-flex flex-column justify-content-around m-4 mt-1 mb-1"
+            >
+              <div class="question my-2">question inserted from javascript</div>
+
+              <form class="options">
+                <div>
+                  <input id="optn1" type="checkbox" /><label
+                    for="optn1"
+                    class="option mx-2 mb-3"
+                  >
+                    option 1</label
+                  >
+                </div>
+                <div>
+                  <input id="optn2" type="checkbox" /><label
+                    for="optn2"
+                    class="option mx-2 mb-3"
+                  >
+                    option 2</label
+                  >
+                </div>
+                <div>
+                  <input id="optn3" type="checkbox" /><label
+                    for="optn3"
+                    class="option mx-2 mb-3"
+                  >
+                    option 3</label
+                  >
+                </div>
+                <div>
+                  <input id="optn4" type="checkbox" /><label
+                    for="optn4"
+                    class="option mx-2 mb-3"
+                  >
+                    option 4</label
+                  >
+                </div>
+              </form>
+            </div>
+
+            <!-- buttons -->
+            <div class="m-5 buttons d-flex w-80 justify-content-around">
+              <button class="previous btn btn-warning">Previous</button>
+              <button class="submit hidden btn btn-danger">Submit</button>
+              <button class="next btn btn-warning">Next</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="yellow-txt fixed-bottom text-center">
+      Ⓒ Created by Dheeraj Manwani
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
