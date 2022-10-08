@@ -18,20 +18,24 @@ const next_btn = document.querySelector(".next");
 const prev_btn = document.querySelector(".previous");
 const submit_btn = document.querySelector(".submit");
 const start_btn = document.querySelector(".startBtn");
+const progressBarEl = document.querySelector(".progress");
 const progressBar = document.querySelector(".progress-bar");
 const progressCont = document.querySelector(".progress");
 
 const allOpnInputs = document.querySelectorAll(".optnInput");
-const allCheckboxes = document.querySelectorAll('input[type = "checkbox"]');
+const allCheckboxes = document.querySelectorAll(".inp-checkbox");
+const nightCheckbox = document.querySelector(".night-checkbox");
 
 // ----------------------------
 
 // functions
 const startQuiz = function () {
+  progressBarEl.classList.remove("hide-and-remove");
   rulesEl.classList.add("hide-and-remove");
-  html = `<span class="timer">2:00</span>`;
+  timerEl.classList.remove("hide-and-remove");
+  // html = `<span class="timer">2:00</span>`;
   welcomeTextEl.textContent = "All the best!!";
-  welcomeTextEl.insertAdjacentHTML("beforeend", html);
+  // welcomeTextEl.insertAdjacentHTML("beforeend", html);
   timeInterval = setInterval(updateTimer, 1000);
   main.classList.remove("hide-and-remove");
 
@@ -121,7 +125,7 @@ const submitQuiz = function () {
   QA_containerEl.classList.add("hide-and-remove");
   progressCont.classList.add("hide-and-remove");
   main.classList.add("hide-and-remove");
-
+  timerEl.classList.add("hide-and-remove");
   document.querySelectorAll("button").forEach((btn) => {
     btn.classList.add("hide-and-remove");
   });
@@ -134,15 +138,34 @@ const submitQuiz = function () {
   const html = `<div class="finalMessage d-flex flex-column justify-content-around align-items-around"> <h1 class = "m-5">You Scored ${
     points * 20
   }% <br> ${greeting} </h1>
-    <button class="try-again btn btn-warning mx-auto " onClick = location.reload()>Try Again</button></div>`;
+    <button class="try-again btn btn-primary mx-auto " onClick = location.reload()>Try Again</button></div>`;
 
   windowEl.insertAdjacentHTML("beforeend", html);
+};
+
+//Night Mode
+const nightMode = function () {
+  document.querySelector("body").classList.toggle("dark");
+  document.querySelector(".heading").classList.toggle("yellow-border");
+  windowEl.classList.toggle("white-border");
+
+  document.querySelectorAll(".btn").forEach((el) => {
+    el.classList.toggle("btn-primary");
+    el.classList.toggle("btn-warning");
+  });
+
+  timerEl?.classList.toggle("text-dark");
+  document
+    .querySelectorAll(".highlight")
+    .forEach((el) => el.classList.toggle("yellow-txt"));
+  progressBar.classList.toggle("yellow-bg");
 };
 
 // ------------------------------------------
 
 // Event Handlers
 start_btn.addEventListener("click", () => startQuiz());
+// startQuiz();
 
 QA_containerEl.addEventListener("click", function (e) {
   if (e.target.type != "checkbox") return;
@@ -158,6 +181,7 @@ prev_btn.addEventListener("click", () => renderQues(-1));
 
 submit_btn.addEventListener("click", submitQuiz);
 
+nightCheckbox.addEventListener("click", () => nightMode());
 //
 //
 //
