@@ -214,6 +214,10 @@ input[type="checkbox"]:checked {
   .inp-checkbox {
     border: 2px solid white;
   }
+
+  .label {
+    transform: scale(0.8);
+  }
 }
 
 .night-checkbox {
