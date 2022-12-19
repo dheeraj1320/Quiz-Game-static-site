@@ -1,0 +1,66 @@
+/* TABLET */
+@media (max-width: 767px) {
+  body {
+    font-size: 1.25rem;
+  }
+
+  nav p {
+    font-size: 2rem;
+  }
+
+  .window,
+  .main,
+  .rules,
+  .finalMessage {
+    width: 80vw;
+    height: 60vh;
+  }
+}
+
+/* SMARTPHONE */
+@media (max-width: 575px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .welcome-text {
+    font-size: 1.5rem;
+  }
+
+  .window,
+  .main,
+  .rules,
+  .finalMessage {
+    width: 90vw;
+    height: 50vh;
+  }
+
+  .container {
+    margin: 0;
+  }
+
+  .QA-container {
+    width: 90%;
+    height: 30vh;
+  }
+
+  .question {
+    height: 5vh;
+  }
+
+  .buttons {
+    margin: 0px;
+  }
+
+  nav {
+    height: 9vh;
+  }
+
+  .inp-checkbox {
+    border: 2px solid white;
+  }
+
+  .label {
+    transform: scale(0.8);
+  }
+}

@@ -46,7 +46,7 @@ footer {
 .rules,
 .finalMessage {
   width: 644px;
-  height: 430px;
+  min-height: 430px;
   margin: auto;
 }
 
@@ -147,79 +147,7 @@ input[type="checkbox"]:checked {
   border: 4px solid white;
 }
 
-/* --------------------------------- */
-/* TYPOGRAPHY */
-
-/* --------------------------------- */
-/* MEDIA QUERIES */
-
-/* TABLET */
-@media (max-width: 767px) {
-  body {
-    font-size: 1.25rem;
-  }
-
-  nav p {
-    font-size: 2rem;
-  }
-
-  .window,
-  .main,
-  .rules,
-  .finalMessage {
-    width: 80vw;
-    height: 60vh;
-  }
-}
-
-/* SMARTPHONE */
-@media (max-width: 575px) {
-  body {
-    font-size: 1rem;
-  }
-
-  .welcome-text {
-    font-size: 1.5rem;
-  }
-
-  .window,
-  .main,
-  .rules,
-  .finalMessage {
-    width: 90vw;
-    height: 50vh;
-  }
-
-  .container {
-    margin: 0;
-  }
-
-  .QA-container {
-    width: 90%;
-    height: 30vh;
-  }
-
-  .question {
-    height: 5vh;
-  }
-
-  .buttons {
-    margin: 0px;
-  }
-
-  nav {
-    height: 9vh;
-  }
-
-  .inp-checkbox {
-    border: 2px solid white;
-  }
-
-  .label {
-    transform: scale(0.8);
-  }
-}
-
+/* NIGHT MODE */
 .night-checkbox {
   opacity: 0;
   position: absolute;
@@ -236,7 +164,6 @@ input[type="checkbox"]:checked {
   position: relative;
   height: 26px;
   width: 61px;
-  /* transform: scale(1.5); */
 }
 
 .label .ball {
@@ -263,6 +190,7 @@ input[type="checkbox"]:checked {
   color: #f39c12;
 }
 
+/* PROGRESS BAR */
 .progress-bar {
   /* height: 11px; */
   border-radius: 7px;
